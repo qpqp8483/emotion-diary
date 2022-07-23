@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap");
 
-body{
-  display:flex;
+body {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -10,18 +10,18 @@ body{
   background: #f6f6f6;
 }
 
-#root{
+#root {
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.App{
+.App {
   padding: 0px 20px;
   min-height: 100vh;
   box-sizing: border-box;
 }
 
-.MyButton{
+.MyButton {
   padding: 10px 20px;
   font-size: 18px;
   font-family: "Nanum pen Script";
@@ -30,56 +30,121 @@ body{
   border-radius: 5px;
   cursor: pointer;
 }
-.MyButton_default{
+.MyButton_default {
   background-color: #ececec;
   color: #000;
 }
-.MyButton_positive{
+.MyButton_positive {
   background-color: #64c964;
   color: #fff;
 }
-.MyButton_negative{
+.MyButton_negative {
   background-color: #fd565f;
   color: #fff;
 }
 
 /* HEADER */
 
-header{
+header {
   display: flex;
   align-content: center;
   padding: 20px 0;
   border-bottom: 1px solid #e2e2e2;
 }
-header > div{
+header > div {
   display: flex;
 }
-header .head_text{
+header .head_text {
   justify-content: center;
   width: 50%;
   font-size: 25px;
 }
-header .head_btn_left{
+header .head_btn_left {
   width: 25%;
   justify-content: start;
 }
-header .head_btn_right{
+header .head_btn_right {
   width: 25%;
   justify-content: end;
 }
-header button{
+header button {
   font-family: "Nanum pen Script";
 }
 
+/* DiaryEditor */
+
+.DiaryEditor {
+}
+.DiaryEditor section {
+  margin-bottom: 40px;
+}
+.DiaryEditor h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.DiaryEditor .input_date {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Nanum pen Script";
+  background-color: #ececec;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.DiaryEditor .emotion_list_wrapper {
+  display: flex;
+}
+
+/*EmotionItem*/
+.EmotionItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  width: 20%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.EmotionItem img {
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+.EmotionItem span {
+  font-size: 18px;
+}
+.EmotionItem_off {
+  background-color: #ececec;
+}
+.EmotionItem_on_1 {
+  background-color: #64c964;
+  color: #fff;
+}
+.EmotionItem_on_2 {
+  background-color: #9dd772;
+  color: #fff;
+}
+.EmotionItem_on_3 {
+  background-color: #fdce17;
+  color: #fff;
+}
+.EmotionItem_on_4 {
+  background-color: #fd8446;
+  color: #fff;
+}
+.EmotionItem_on_5 {
+  background-color: #fd565f;
+  color: #fff;
+}
 
 @media (min-width: 650px) {
-  .App{
+  .App {
     width: 640px;
   }
 }
 
 @media (max-width: 650px) {
-  .App{
+  .App {
     width: 90vw;
   }
 }

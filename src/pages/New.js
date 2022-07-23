@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
+import DiaryEditor from "../components/DiaryEditor";
 
 const New = () => {
-    return (
-        <div>
-            <h2>New</h2>
-            <p>이곳은 일기 작성페이지입니다.</p>
-        </div>
-    );
+  return (
+    <div>
+      <DiaryEditor />
+    </div>
+  );
 };
 
 export default New;
