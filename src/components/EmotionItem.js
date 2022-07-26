@@ -10,7 +10,7 @@ const EmotionItem = ({
   return (
     <div
       onClick={() => {
-        onClick(emotion_id);
+        onClick(emotion_id, emotion_img, emotion_descript);
       }}
       className={[
         "EmotionItem",
