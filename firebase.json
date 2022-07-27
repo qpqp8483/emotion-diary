@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "chw-diary-projuct",
+    "public": "build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
